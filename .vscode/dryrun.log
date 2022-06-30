@@ -1,0 +1,8 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/seoko/Desktop/inception'
+sudo mkdir -p  /home/seoko/data/wordpres
+sudo mkdir -p  /home/seoko/data/database
+sudo echo "127.0.0.1 seoko.42.fr" >> etc/hosts
+sudo docker-compose -f srcs/docker-compose.yml up --build -data -d 
+make: Leaving directory `/Users/seoko/Desktop/inception'
+ 
